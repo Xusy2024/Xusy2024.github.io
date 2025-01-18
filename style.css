@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.award-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #4CAF50;
+    border-radius: 4px;
+}
+
+.award-item h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.award-item p {
+    margin: 0;
+    color: #666;
+}
+
+/* 鼠标轨迹效果 */
+:root {
+    --trail-color: rgba(255,0,0,0.8);
+}
+
+.trail {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: var(--trail-color);
+    pointer-events: none;
+    opacity: 1;
+    transform: scale(1);
+    animation: trailFade 1s ease-out forwards;
+    transition: background 0.2s ease-out;
+}
+
+.algorithm-text {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    pointer-events: none;
+    animation: textFade 2s ease-out forwards;
+}
+
+@keyframes textFade {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes colorRotate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes trailFade {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
