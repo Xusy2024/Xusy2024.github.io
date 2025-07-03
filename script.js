@@ -1,10 +1,8 @@
 /*
- * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @Date: 2025-01-17 21:28:14
- * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @LastEditTime: 2025-01-17 21:48:56
- * @FilePath: \AIdoes\script.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @Author: Xusy2024
+ * @Date: 2025-7-3
+ * @LastEditors: Xusy2024
+ * @LastEditTime: 2025-7-3
  */
 // 颜色数组
 const colors = [
@@ -19,7 +17,7 @@ const colors = [
     'rgba(255,192,203,0.8)'
 ];
 // 算法文本数组
-const algorithms = ['贪心', '模拟', '枚举', '搜索', '二分', '动态规划', '倍增', '构造'];
+const algorithms = ['贪心', '模拟', '枚举', '搜索', '二分', '动态规划', '倍增', '构造','前缀和','递归','分治','复杂度'];
 
 let colorIndex = 0;
 
@@ -68,29 +66,4 @@ $(document).ready(function() {
             $(this).remove();
         });
     });
-
-    // 从JSON文件加载获奖数据
-    $.getJSON('awards.json', function(awards) {
-        // 渲染获奖记录
-        function renderAwards() {
-            const $awardsList = $('#awards-list');
-            $awardsList.empty();
-            
-            awards.forEach(award => {
-                const awardHtml = `
-                    <div class="award-item">
-                        <h3>${award.title}</h3>
-                        <p><strong>获奖日期：</strong>${award.date}</p>
-                        <p>${award.description}</p>
-                    </div>
-                `;
-                $awardsList.append(awardHtml);
-            });
-        }
-
-        // 初始化
-        renderAwards();
-    }).fail(function() {
-        $('#awards-list').html('<p>无法加载获奖数据</p>');
-    });
-});
+}];
