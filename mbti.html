@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBTI测试</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>MBTI 测试</h1>
+    <div class="progress-bar">
+      <div id="progress" class="progress-fill"></div>
+    </div>
+    <p id="question-count">1/20</p>
+    <div class="question-card">
+      <p id="question">当你面对压力时，你会？</p>
+      <div class="options">
+        <button class="option" data-score="E">积极寻找解决办法</button>
+        <button class="option" data-score="I">需要一些时间独处来调整</button>
+      </div>
+    </div>
+    <button id="next-btn" disabled>下一题</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
