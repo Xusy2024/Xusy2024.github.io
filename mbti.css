@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f23;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #1a1a33;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #00ffff;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #00ffff;
+  border-radius: 5px;
+  width: 5%;
+  transition: width 0.5s ease;
+}
+
+#question-count {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.question-card {
+  background-color: #2a2a44;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#question {
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  background-color: #00cccc;
+  color: #0f0f23;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option:hover {
+  background-color: #00ffff;
+}
+
+.option.selected {
+  background-color: #00ffff;
+}
+
+#next-btn {
+  background-color: #00cccc;
+  color: #0f0f23;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#next-btn:hover:enabled {
+  background-color: #00ffff;
+}
+
+#next-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
